@@ -8,11 +8,11 @@ tags: [HTTP,网络知识]
 
 
 
-==HTTP 的作用就是指导浏览器和服务器如何进行沟通。==
+`HTTP 的作用就是指导浏览器和服务器如何进行沟通。`
 
 
 
-> **curl命令**
+## curl命令
 
 curl命令是一个利用URL规则在命令行工作的文件传输工具。
 
@@ -31,7 +31,7 @@ curl命令是一个利用URL规则在命令行工作的文件传输工具。
 
 
 
-命令使用举:chestnut:
+命令使用举🌰
 
 
 
@@ -124,7 +124,7 @@ curl -O https://ss0.bdstatic.com/img/logo_baidu.com
 
 
 
-:cyclone: **注意**
+🌀 **注意**
 
 curl -s -v -H "superman285:666" https://xiedaimala.com/search?keyword=scss&type=courses&page=1
 
@@ -137,7 +137,7 @@ curl -s -v -H "superman285:666" https://xiedaimala.com/search?keyword=scss&type=
 
 
 
-#### 请求与响应的构成
+## 请求与响应的构成
 
 ------
 
@@ -145,14 +145,14 @@ curl -s -v -H "superman285:666" https://xiedaimala.com/search?keyword=scss&type=
 
 
 
-###### HTTP请求
+### HTTP请求
 
 1. 请求方法 路径 协议/版本号
 2. 请求头
 3. 空行
 4. 请求数据正文
 
-###### 请求具体格式
+### 请求具体格式
 
 - 第1部分：动词 路径 协议/版本号
 - 第2部分：key1:value1
@@ -170,11 +170,11 @@ curl -s -v -H "superman285:666" https://xiedaimala.com/search?keyword=scss&type=
 
 💡 **请求方法动词有：**
 
-==GET== **|** ==POST== **|** ==PUT== **|** ==PATCH== **|** ==DELETE==
+`GET` **|** `POST` **|** `PUT` **|** `PATCH` **|** `DELETE`
 
 
 
-💡 路径默认为“/”,路径包括==查询参数==，但不包括==锚点==。
+💡 路径默认为“/”,路径包括`查询参数`，但不包括`锚点`。
 
 ✔ /search?keyword=SASS&type=courses&page=1
 
@@ -194,14 +194,14 @@ curl -s -v -H "superman285:666" https://xiedaimala.com/search?keyword=scss&type=
 
 
 
-###### HTTP响应
+### HTTP响应
 
 1. 状态行 「协议/版本号 状态码 状态描述」
 2. 响应头
 3. 空行
 4. 响应数据正文
 
-###### 响应具体格式
+### 响应具体格式
 
 - 第1部分：协议/版本号 状态码 状态解释
 
@@ -229,7 +229,7 @@ curl -s -v -H "superman285:666" https://xiedaimala.com/search?keyword=scss&type=
 
 
 
-###### 状态码
+### 状态码
 
 - 1xx 不常用
 - 2xx 表示成功
@@ -237,7 +237,7 @@ curl -s -v -H "superman285:666" https://xiedaimala.com/search?keyword=scss&type=
 - 4xx 表示你错了  (**访问者**出错了，例如地址打错了等)
 - 5xx 表示好吧,我错了    (**服务器**出错了，例如服务器挂了、服务器停止了) 
 
-==状态码是服务器对浏览器说的话，需要记住。==
+`状态码是服务器对浏览器说的话，需要记住。`
 
 
 
@@ -262,7 +262,7 @@ curl -s -v -H "superman285:666" https://xiedaimala.com/search?keyword=scss&type=
 
 Method页签看GET或POST方法，status看状态码，protocol看协议/版本号，type看类型可以为document、script、png等
 
-![chrome-tab](C:/Users/SuperX/Desktop/%E9%A5%A5%E4%BA%BA%E8%B0%B7%E5%89%8D%E7%AB%AF/%E5%89%8D%E7%AB%AF%E5%AD%A6%E5%89%8D%E5%9F%BA%E7%A1%80/HTTP%E7%9B%B8%E5%85%B3%E5%A7%BF%E5%8A%BF/chrome-tab.png)
+![chrome-tab](chrome-tab.png)
 
 
 
@@ -270,7 +270,7 @@ Method页签看GET或POST方法，status看状态码，protocol看协议/版本�
 
 在右侧弹出页的Headers,有General、Response Headers、Request Headers等信息
 
-![chrome-rr](C:/Users/SuperX/Desktop/%E9%A5%A5%E4%BA%BA%E8%B0%B7%E5%89%8D%E7%AB%AF/%E5%89%8D%E7%AB%AF%E5%AD%A6%E5%89%8D%E5%9F%BA%E7%A1%80/HTTP%E7%9B%B8%E5%85%B3%E5%A7%BF%E5%8A%BF/chrome-rr.png)
+![chrome-rr](chrome-rr.png)
 
 General
 
@@ -294,25 +294,25 @@ General
 
 Response Headers/Request Headers**右侧浅色小字**
 
-这儿可以==查看到请求|响应内容的前3部分==
+这儿可以`查看到请求|响应内容的前3部分`
 
 
 
-:cyclone:请求的第4部分数据在Form Data或Request Payload中查看 [*GET请求没有第4部分数据*]
+🌀 请求的第4部分数据在Form Data或Request Payload中查看 [*GET请求没有第4部分数据*]
 
 
 
-![chrome-request4](C:/Users/SuperX/Desktop/%E9%A5%A5%E4%BA%BA%E8%B0%B7%E5%89%8D%E7%AB%AF/%E5%89%8D%E7%AB%AF%E5%AD%A6%E5%89%8D%E5%9F%BA%E7%A1%80/HTTP%E7%9B%B8%E5%85%B3%E5%A7%BF%E5%8A%BF/request-chrome.png)
+![chrome-request4](request-chrome.png)
 
 ------
 
 
 
-:cyclone: 响应的第4部分数据在Preview或Response的tab中查看
+🌀 响应的第4部分数据在Preview或Response的tab中查看
 
 
 
-![response-chrome4](C:/Users/SuperX/Desktop/%E9%A5%A5%E4%BA%BA%E8%B0%B7%E5%89%8D%E7%AB%AF/%E5%89%8D%E7%AB%AF%E5%AD%A6%E5%89%8D%E5%9F%BA%E7%A1%80/HTTP%E7%9B%B8%E5%85%B3%E5%A7%BF%E5%8A%BF/response-chrome.png)
+![response-chrome4](response-chrome.png)
 
 ------
 
