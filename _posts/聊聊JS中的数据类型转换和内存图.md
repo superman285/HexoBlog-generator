@@ -301,7 +301,7 @@ console.log(a.name); //画内存图
 >
 > `直接赋值给对象`
 >
-> ![copy2](C:/Users/SuperX/Desktop/%E9%A5%A5%E4%BA%BA%E8%B0%B7%E5%89%8D%E7%AB%AF/JavaScript-jrg/jsTypePic/copy2.png)
+> ![copy2](copy2.png)
 >
 > `赋值给对象的属性`
 >
@@ -309,7 +309,7 @@ console.log(a.name); //画内存图
 >
 > `将基本类型值赋值给原来的对象`
 >
-> ![copy4](C:/Users/SuperX/Desktop/%E9%A5%A5%E4%BA%BA%E8%B0%B7%E5%89%8D%E7%AB%AF/JavaScript-jrg/jsTypePic/copy4.png)
+> ![copy4](copy4.png)
 
 
 
