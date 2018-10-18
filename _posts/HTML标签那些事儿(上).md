@@ -1,16 +1,18 @@
 ---
-title: HTML标签那些事儿
+title: HTML标签那些事儿(上)
 date: 2018-08-31 13:38:24
 tags: [HTML,基础]
 ---
 
-### HTML标签那些事儿
+## HTML标签那些事儿(上)
 
-------
+> 故事上篇，我们先概览一下HTML标签的大概全貌。
+
+
 
 HTML：超文本标记语言——HyperText Markup Language，它描述并定义了一个网页的内容和基本布局。
 
-### ==**HTML标签大全**==
+### `HTML标签大全`
 
 #### 基础
 
@@ -157,7 +159,7 @@ HTML：超文本标记语言——HyperText Markup Language，它描述并定义
 
 #### 样式/节(很关键)
 
-==(本部分从header开始都是html5新标签)==
+`(本部分从header开始都是html5新标签)`
 
 | 标签    | 描述                                     |
 | ------- | ---------------------------------------- |
@@ -234,3 +236,23 @@ HTML：超文本标记语言——HyperText Markup Language，它描述并定义
     <li>track</li>
     <li>wbr</li>
 </ul>
+
+### 块元素、行内元素
+
+------
+
+一个块元素独占一行显示，宽度占据父容器整个空间，通常浏览器会在块级元素前后另起一个新行。
+
+多个行内元素可以在同一行显示，默认行内元素不会以新行开始
+
+
+
+常见行内元素：
+
+**span、img、a、lable、input、abbr、em、big、cite、i、q、textarea、select、small、sub、sup，strong、u、button**
+
+
+
+常见块元素：
+
+**div、p、h1~h6、ul、ol、dl、li、dd、table、hr、blockquote、address、table、menu、pre，HTML5新增的header、section、aside、footer等**
