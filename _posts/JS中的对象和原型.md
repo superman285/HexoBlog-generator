@@ -8,8 +8,6 @@ tags: [JavaScript,前端知识]
 
 
 
-from JS标准参考教程 阮一峰
-
 ### 对象
 
 > 对象就是一组键值对(key-value)集合,是无序的复合数据集合。类似map结构。
@@ -288,6 +286,8 @@ for (var key in person) {
 
 
 
+以上总结From 『js标准参考教程』
+
 ------
 
 
@@ -475,7 +475,7 @@ n1.\_\_proto\_\_.\_\_proto\_\_ === Object.prototype
 
 
 
-<font style="color:white;background:mediumseagreen;padding:3px 6px;font-weight:bold;">某个实例访问属性，如果该实例的构造函数的prototype没有这个属性，就会往更下一层的\_\_proto\_\_(即Object的共有属性)去找，有的话就可调用成功，如果还是没有就返回undefined。</font>
+<font style="color:white;background:mediumseagreen;padding:3px 6px;font-weight:bold;line-height:28px">某个实例访问属性，如果该实例的构造函数的prototype没有这个属性，就会往更下一层的\_\_proto\_\_(即Object的共有属性)去找，有的话就可调用成功，如果还是没有就返回undefined。</font>
 
 例如上文的 n1.hasOwnProperty就是往下一层的\_\_proto\_\_中找的属性，是对象才有的公共属性。
 
@@ -535,7 +535,7 @@ var后的为对象，new后面的为函数对象
 
 
 
- <font style="color:white;background:mediumseagreen;padding:3px 6px;font-weight:bold;">特殊的Function</font>
+ <font style="color:white;background:mediumseagreen;padding:3px 6px;font-weight:bold;line-height:2">特殊的Function</font>
 
 Fuction的构造函数也是Function，
 
