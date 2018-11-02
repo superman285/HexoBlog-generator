@@ -567,8 +567,9 @@ Function.prototype也是一个对象，对象的\_\_proto\_\_属性即对象的�
 
 所以Object(Object是一个函数对象)的构造函数也是Function，则
 
-> Object.\_\_proto\_\_ \=\=\= Function.prototype
-> Object.\_\_proto\_\_ \=\=\= Function.\_\_proto\_\_
+> Object.\_\_proto\_\_ === Function.prototype 
+>
+> Object.\_\_proto\_\_ === Function.\_\_proto\_\_
 
 
 
