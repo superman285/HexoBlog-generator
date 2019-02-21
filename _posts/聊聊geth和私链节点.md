@@ -1,7 +1,9 @@
 ---
 title: 聊聊geth和私链节点
 date: 2019-01-20 20:59:51
-tags: [BlockChain,Ethereum]
+tags:
+- BlockChain
+- Ethereum
 ---
 
 ##### 创世区块
